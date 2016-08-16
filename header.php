@@ -15,7 +15,7 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <?php wp_head(); ?>
   </head>
-  <body <?php body_class($class); <?php if ( !is_home() || !is_front_page() ) {?>id="innerPage"<?php } ?>>
+  <body <?php body_class($class); ?> <?php if ( !is_home() || !is_front_page() ) {?>id="innerPage"<?php } ?>>
       <?php if ( is_home() ) { ?>
       <div class="headerhome">
       <?php } else { ?>
