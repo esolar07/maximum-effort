@@ -12,6 +12,20 @@
  Text Domain:  Fitness Lite Child
 */
 @import url("../fitness-lite/style.css");
+/* Google Fonts */
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto";
+/*********
+Base Styles
+**********/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+/**********
+Module Styles
+**********/
 .nivo-prevNav {
   display: none; }
 
@@ -20,5 +34,7 @@
 
 .nivo-controlNav {
   display: none; }
+
+/* Footer Styles */
 
 /*# sourceMappingURL=style.css.map */

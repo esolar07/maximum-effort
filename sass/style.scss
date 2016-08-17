@@ -17,9 +17,37 @@
 @import url("../fitness-lite/style.css");
 
 
+// *********************
+// Config
+// *********************
 
 
-// modules
+/* Google Fonts */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+
+
+// variables
+
+$site-Header-Font: 'Roboto', sans-serif;
+$site-Faragraph-Font: 'Open Sans', sans-serif;
+
+
+/*********
+Base Styles
+**********/
+h1, h2, h3, h4, h5, h6{
+  font-family: $site-Header-Font;
+}
+
+p{
+  font-family: $site-Faragraph-Font;
+}
+
+
+/**********
+Module Styles
+**********/
 
 .nivo-prevNav{
   display: none;
@@ -31,4 +59,10 @@
 
 .nivo-controlNav{
   display: none;
+}
+
+/* Footer Styles */
+
+.footer-wrapper{
+
 }
