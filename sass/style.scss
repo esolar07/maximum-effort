@@ -61,6 +61,18 @@ Module Styles
   display: none;
 }
 
+
+.site-main {
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 1169px) and (min-width: 768px){
+    width: 90%;
+  }
+}
+
+
+
+
 /* Footer Styles */
 
 .footer-wrapper{

@@ -35,6 +35,13 @@ Module Styles
 .nivo-controlNav {
   display: none; }
 
+.site-main {
+  margin-right: auto;
+  margin-left: auto; }
+  @media screen and (max-width: 1169px) and (min-width: 768px) {
+    .site-main {
+      width: 90%; } }
+
 /* Footer Styles */
 
 /*# sourceMappingURL=style.css.map */

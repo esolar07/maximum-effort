@@ -78,7 +78,7 @@
       <div class="slider-wrapper theme-default">
 
         <div class="nivoSlider" id="slider">
-          <img title="#slidecaption1" src="<?php echo get_template_directory_uri();?>/images/slides/slider1.jpg">
+          <img title="#slidecaption1" src="<?php echo get_template_directory_uri();?>/images/slides/slider2.jpg">
           <!---************************************************************
             Removing other slide images for now unit better images are made.
          ******************************************************************-->
