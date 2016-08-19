@@ -38,6 +38,8 @@ $site-Faragraph-Font: 'Open Sans', sans-serif;
 $page-content-bgcolor: #272727;
 $page-content-header: #ff4e1c;
 $page-content-text-color: white;
+$page-input-text-color: #272727;
+$page-content-price-color: #ff4e1c;
 
 
 // *******mixins and functions
@@ -51,6 +53,11 @@ $page-content-text-color: white;
 /*********
 Base Styles
 **********/
+
+body{
+  background: $page-content-bgcolor;
+}
+
 h1, h2, h3, h4, h5, h6{
   font-family: $site-Header-Font;
 }
@@ -63,16 +70,40 @@ p{
 /**********
 Module Styles
 **********/
-.entry-title{
-  font-size: em(25px);
-  font-weight: bolder;
-  text-align: center;
-  color: $page-content-header;
-}
 
-.page-content{
+/* Page Body Styles */
+
+.page_content{
   color:$page-content-text-color;
   background-color: $page-content-bgcolor;
+  p{
+    line-height: 25px;
+    &:nth-child(1){
+      text-align: center;
+    }
+  }
+  .site-main{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 0px;
+    font-size: em(18px);
+    @media screen and (max-width: 1169px) and (min-width: 768px){
+      width: 90%;
+    }
+  }
+  .entry-title{
+    font-size: em(40px);
+    font-weight: bolder;
+    text-align: center;
+    color: $page-content-header;
+  }
+  .entry-content{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    letter-spacing: .5px;
+  }
 }
 
 .nivo-prevNav{
@@ -88,15 +119,35 @@ Module Styles
 }
 
 
-.site-main {
-  margin-right: auto;
-  margin-left: auto;
-  @media screen and (max-width: 1169px) and (min-width: 768px){
-    width: 90%;
-  }
+.input-text {
+  line-height: 3;
+  color: $page-input-text-color;
+}
+
+.psc-custom-select{
+  line-height: 2.3;
 }
 
 
+/* Product Page Styles */
+.psc_product{
+  widows: 30%;
+  img{
+    border-radius: 5%;
+  }
+  h3{
+    color:white;
+  }
+  .price{
+    color: $page-content-price-color;
+  }
+  .psc-button{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    text-align: center;
+  }
+}
 
 
 /* Footer Styles */

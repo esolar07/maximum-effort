@@ -17,6 +17,9 @@
 /*********
 Base Styles
 **********/
+body {
+  background: #272727; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif; }
 
@@ -26,15 +29,33 @@ p {
 /**********
 Module Styles
 **********/
-.entry-title {
-  font-size: 1.5625em;
-  font-weight: bolder;
-  text-align: center;
-  color: #ff4e1c; }
-
-.page-content {
+/* Page Body Styles */
+.page_content {
   color: white;
   background-color: #272727; }
+  .page_content p {
+    line-height: 25px; }
+    .page_content p:nth-child(1) {
+      text-align: center; }
+  .page_content .site-main {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 0px;
+    font-size: 1.125em; }
+    @media screen and (max-width: 1169px) and (min-width: 768px) {
+      .page_content .site-main {
+        width: 90%; } }
+  .page_content .entry-title {
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+    color: #ff4e1c; }
+  .page_content .entry-content {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    letter-spacing: .5px; }
 
 .nivo-prevNav {
   display: none; }
@@ -45,12 +66,27 @@ Module Styles
 .nivo-controlNav {
   display: none; }
 
-.site-main {
-  margin-right: auto;
-  margin-left: auto; }
-  @media screen and (max-width: 1169px) and (min-width: 768px) {
-    .site-main {
-      width: 90%; } }
+.input-text {
+  line-height: 3;
+  color: #272727; }
+
+.psc-custom-select {
+  line-height: 2.3; }
+
+/* Product Page Styles */
+.psc_product {
+  widows: 30%; }
+  .psc_product img {
+    border-radius: 5%; }
+  .psc_product h3 {
+    color: white; }
+  .psc_product .price {
+    color: #ff4e1c; }
+  .psc_product .psc-button {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    text-align: center; }
 
 /* Footer Styles */
 
