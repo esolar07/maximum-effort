@@ -29,8 +29,23 @@
 
 // variables
 
+$base-font-size: 16px;                           // Base Font Size
+
 $site-Header-Font: 'Roboto', sans-serif;
 $site-Faragraph-Font: 'Open Sans', sans-serif;
+
+
+$page-content-bgcolor: #272727;
+$page-content-header: #ff4e1c;
+$page-content-text-color: white;
+
+
+// *******mixins and functions
+
+// (converts px -> em)
+@function em($t, $c:$base-font-size){
+  @return ($t / $c) * 1em;
+}
 
 
 /*********
@@ -48,6 +63,17 @@ p{
 /**********
 Module Styles
 **********/
+.entry-title{
+  font-size: em(25px);
+  font-weight: bolder;
+  text-align: center;
+  color: $page-content-header;
+}
+
+.page-content{
+  color:$page-content-text-color;
+  background-color: $page-content-bgcolor;
+}
 
 .nivo-prevNav{
   display: none;

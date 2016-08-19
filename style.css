@@ -26,6 +26,16 @@ p {
 /**********
 Module Styles
 **********/
+.entry-title {
+  font-size: 1.5625em;
+  font-weight: bolder;
+  text-align: center;
+  color: #ff4e1c; }
+
+.page-content {
+  color: white;
+  background-color: #272727; }
+
 .nivo-prevNav {
   display: none; }
 
