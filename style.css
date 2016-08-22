@@ -21,7 +21,8 @@ body {
   background: #272727; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #ff4e1c; }
 
 p {
   font-family: "Open Sans", sans-serif; }
@@ -66,27 +67,57 @@ Module Styles
 .nivo-controlNav {
   display: none; }
 
-.input-text {
-  line-height: 3;
+.paypal-shopping-carts-checkout .input-text {
+  line-height: 3 !important;
   color: #272727; }
-
-.psc-custom-select {
+.paypal-shopping-carts-checkout .psc-custom-select {
   line-height: 2.3; }
 
 /* Product Page Styles */
-.psc_product {
-  widows: 30%; }
-  .psc_product img {
+.paypal-shopping-carts .psc_product {
+  width: 30%; }
+  .paypal-shopping-carts .psc_product img {
     border-radius: 5%; }
-  .psc_product h3 {
+  .paypal-shopping-carts .psc_product h3 {
     color: white; }
-  .psc_product .price {
+  .paypal-shopping-carts .psc_product .price {
     color: #ff4e1c; }
-  .psc_product .psc-button {
+  .paypal-shopping-carts .psc_product .psc-button {
     margin-right: auto;
     margin-left: auto;
     width: 80%;
     text-align: center; }
+
+del {
+  color: red !important; }
+
+ins {
+  color: #ff4e1c !important; }
+
+/* Checkoout Page Styles */
+.psc-enable_express-checkout {
+  padding: 3em 2em 1em 0px !important;
+  text-align: center;
+  font-size: 1.0625em !important;
+  color: white !important;
+  border-top: 3px solid #ff4e1c !important;
+  border-bottom: 3px solid #ff4e1c !important; }
+
+.paypal-shopping-carts-checkout {
+  padding-top: 30px; }
+  .paypal-shopping-carts-checkout .psc_order_heading {
+    padding-top: 20px !important; }
+
+.psc-checkout-review-order {
+  color: white !important; }
+  .psc-checkout-review-order tr {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important; }
+
+.psc-checkout-payment {
+  background: inherit !important; }
+  .psc-checkout-payment .psc-button {
+    background: #ff4e1c !important; }
 
 /* Footer Styles */
 

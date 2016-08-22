@@ -41,6 +41,9 @@ $page-content-text-color: white;
 $page-input-text-color: #272727;
 $page-content-price-color: #ff4e1c;
 
+$page-checkout-border: #ff4e1c;
+$page-checkout-btn: #ff4e1c;
+
 
 // *******mixins and functions
 
@@ -60,6 +63,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   font-family: $site-Header-Font;
+  color: $page-content-header;
 }
 
 p{
@@ -118,34 +122,82 @@ Module Styles
   display: none;
 }
 
-
-.input-text {
-  line-height: 3;
-  color: $page-input-text-color;
+.paypal-shopping-carts-checkout{
+  .input-text{
+    line-height: 3 !important;
+    color: $page-input-text-color;
+  }
+  .psc-custom-select{
+    line-height: 2.3;
+  }
 }
 
-.psc-custom-select{
-  line-height: 2.3;
-}
 
 
 /* Product Page Styles */
-.psc_product{
-  widows: 30%;
-  img{
-    border-radius: 5%;
+.paypal-shopping-carts{
+  .psc_product{
+    width: 30%;
+    img{
+      border-radius: 5%;
+    }
+    h3{
+      color:white;
+    }
+    .price{
+      color: $page-content-price-color;
+    }
+    .psc-button{
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+      text-align: center;
+    }
   }
-  h3{
-    color:white;
+}
+
+
+del{
+  color: red !important;
+}
+
+ins{
+   color: #ff4e1c !important;
+}
+
+
+/* Checkoout Page Styles */
+
+.psc-enable_express-checkout{
+  padding: 3em 2em 1em 0px!important;
+  text-align: center;
+  font-size: em(17px) !important;
+  color:white !important;
+  border-top: 3px solid $page-checkout-border !important;
+  border-bottom: 3px solid $page-checkout-border !important;
+}
+
+.paypal-shopping-carts-checkout{
+  padding-top: 30px;
+  .psc_order_heading{
+    padding-top: 20px !important;
   }
-  .price{
-    color: $page-content-price-color;
+}
+
+
+.psc-checkout-review-order{
+  color: white !important;
+  tr{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
+  .psc-product-name, .psc-product-total{}
+}
+
+.psc-checkout-payment{
+  background: inherit !important;
   .psc-button{
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-    text-align: center;
+    background: $page-checkout-btn !important;
   }
 }
 
