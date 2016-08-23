@@ -1,0 +1,34 @@
+
+// *********************
+// Config
+// *********************
+
+
+/* Google Fonts */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+
+// variables
+
+$base-font-size: 16px;                           // Base Font Size
+
+$site-Header-Font: 'Roboto', sans-serif;
+$site-Faragraph-Font: 'Open Sans', sans-serif;
+
+
+$page-content-bgcolor: #272727;
+$page-content-header: #ff4e1c;
+$page-content-text-color: white;
+$page-input-text-color: #272727;
+$page-content-price-color: #ff4e1c;
+
+$page-checkout-border: #ff4e1c;
+$page-checkout-btn: #ff4e1c;
+
+
+// *******mixins and functions
+
+// (converts px -> em)
+@function em($t, $c:$base-font-size){
+  @return ($t / $c) * 1em;
+}

@@ -1,0 +1,57 @@
+
+/* Page Body Styles */
+
+.page_content{
+  color:$page-content-text-color;
+  background-color: $page-content-bgcolor;
+  p{
+    line-height: 25px;
+    &:nth-child(1){
+      text-align: center;
+    }
+  }
+  .site-main{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 0px;
+    font-size: em(18px);
+    @media screen and (max-width: 1169px) and (min-width: 768px){
+      width: 90%;
+    }
+  }
+  .entry-title{
+    font-size: em(40px);
+    font-weight: bolder;
+    text-align: center;
+    color: $page-content-header;
+  }
+  .entry-content{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    letter-spacing: .5px;
+  }
+}
+
+.nivo-prevNav{
+  display: none;
+}
+
+.nivo-directionNav{
+  display: none;;
+}
+
+.nivo-controlNav{
+  display: none;
+}
+
+.paypal-shopping-carts-checkout{
+  .input-text{
+    line-height: 3 !important;
+    color: $page-input-text-color;
+  }
+  .psc-custom-select{
+    line-height: 2.3;
+  }
+}

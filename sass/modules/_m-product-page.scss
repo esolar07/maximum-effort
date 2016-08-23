@@ -1,0 +1,33 @@
+
+
+
+/* Product Page Styles */
+.paypal-shopping-carts{
+  .psc_product{
+    width: 30%;
+    img{
+      border-radius: 5%;
+    }
+    h3{
+      color:white;
+    }
+    .price{
+      color: $page-content-price-color;
+    }
+    .psc-button{
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
+
+
+del{
+  color: red !important;
+}
+
+ins{
+   color: #ff4e1c !important;
+}

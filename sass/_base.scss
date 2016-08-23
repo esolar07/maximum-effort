@@ -1,0 +1,16 @@
+/*********
+Base Styles
+**********/
+
+body{
+  background: $page-content-bgcolor;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $site-Header-Font;
+  color: $page-content-header;
+}
+
+p{
+  font-family: $site-Faragraph-Font;
+}

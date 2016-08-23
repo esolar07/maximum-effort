@@ -1,0 +1,57 @@
+
+/* Checkoout Page Styles */
+
+.psc-enable_express-checkout{
+  padding: 3em 2em 1em 0px!important;
+  text-align: center;
+  font-size: em(17px) !important;
+  color:white !important;
+  border-top: 3px solid $page-checkout-border !important;
+  border-bottom: 3px solid $page-checkout-border !important;
+}
+
+.paypal-shopping-carts-checkout{
+  padding-top: 30px;
+}
+
+#psc_billing_div{
+  padding-bottom: 35px;
+}
+
+#psc_order_heading{
+  margin-top: 20px !important;
+}
+
+
+#psc_order_review{
+  font-family: $site-Faragraph-Font !important;
+  .psc-product-total{
+    padding: 25px 12px;
+    font-family: $site-Faragraph-Font !important;
+    color: white !important;
+  }
+  th{
+   padding-top: 25px;
+   padding-bottom: 25px;
+   font-family: $site-Faragraph-Font !important;
+   border: none;
+  }
+  td{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: $site-Faragraph-Font !important;
+    border: none;
+  }
+}
+
+
+.psc-product-name, .psc-product-total, .cart-subtotal th, .order-total th{
+  color: white !important;
+}
+
+.psc-checkout-payment{
+  background: inherit !important;
+  .psc-button{
+    background: $page-checkout-btn !important;
+  }
+}
