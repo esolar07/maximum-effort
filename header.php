@@ -22,12 +22,18 @@
       <div class="header">
       <?php } ?>
         <div class="header-inner">
+
           <div class="logo">
+            <?php if ( get_theme_mod('site_logo') ) : ?>
+					  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
+		        <?php else : ?>
             <a href="<?php echo home_url('/'); ?>">
               <h1><?php bloginfo('name'); ?></h1>
               <span class="tagline"><?php bloginfo( 'description' ); ?></span>
             </a>
+            <?php endif; ?>
           </div><!-- logo -->
+          
           <div class="toggle">
             <a class="toggleMenu" href="#"><?php _e('Menu','fitness-lite'); ?></a>
           </div><!-- toggle -->

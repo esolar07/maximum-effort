@@ -20,17 +20,7 @@
 
 
              <div class="cols-4 widget-column-2">
-               <h5><?php echo esc_attr(get_theme_mod('news_title',__('Recent Posts','fitness-lite'))); ?></h5>
-				<?php $args = array( 'posts_per_page' => 2, 'post__not_in' => get_option('sticky_posts'), 'orderby' => 'date', 'order' => 'desc' );
-                    query_posts( $args ); ?>
-
-                  <?php while ( have_posts() ) :  the_post(); ?>
-                        <div class="recent-post">
-                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-                         <a href="<?php the_permalink(); ?>"><h6><?php the_title(); ?></h6></a>
-                         <?php echo fitnesslite_content(8); ?>
-                        </div>
-                 <?php endwhile; ?>
+              
               </div>
 
                <div class="cols-4 widget-column-3">
@@ -59,7 +49,6 @@
                 <div class="cols-4 widget-column-4">
                    <h5><?php echo esc_attr(get_theme_mod('contact_title',__('Fitness Center','fitness-lite'))); ?></h5>
                    <p><?php echo esc_attr(get_theme_mod('contact_add',__('100 King St, Melbourne PIC 4000, Australia','fitness-lite'))); ?></p>
-              <div class="phone-no"><strong><?php esc_attr_e('Phone','fitness-lite');?>:</strong> <?php echo esc_attr(get_theme_mod('contact_no',__('+123 456 7890','fitness-lite'))); ?> <br  />
 
            <strong> <?php _e('Email','fitness-lite');?>:</strong> <a href="mailto:<?php echo sanitize_email(get_theme_mod('contact_mail','contact@company.com')); ?>"><?php echo esc_attr(get_theme_mod('contact_mail','contact@company.com')); ?></a></div>
                 </div><!--end .widget-column-4-->
