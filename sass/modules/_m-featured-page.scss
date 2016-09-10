@@ -1,0 +1,29 @@
+
+
+
+.blog-post{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media screen and (min-width: 1170px){
+    flex-direction: row;
+  }
+  .blog_lists{
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    border: 3px solid $page-feature-border;
+    @media screen and (min-width: 1170px){
+      width: 30%;
+    }
+    h2{
+      padding-top: 20px;
+      padding-bottom: 10px;
+      a{
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 0 3px $page-feature-border;/* using border variable so it matchs */
+      }
+    }
+  }
+}

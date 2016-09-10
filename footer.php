@@ -16,19 +16,16 @@
                    <?php echo wp_kses_post(get_theme_mod('footer_menu', __('<li><a href="#">Home</a></li><li><a href="#">About Us</a></li><li><a href="#">Portfolio</a></li><li><a href="#">Contact Us</a></li>','fitness-lite'))); ?>
                   </ul>
                 </div>
-            </div>
-
-
-             <div class="cols-4 widget-column-2">
-              
               </div>
 
+              <div class="cols-4 widget-column-2">
+              </div>
                <div class="cols-4 widget-column-3">
                    <h5><?php echo esc_attr(get_theme_mod('social_title',__('Follow Us','fitness-lite'))); ?></h5>
 
-					<div class="clear"></div>
+					        <div class="clear"></div>
                   <div class="social-icons">
-					<?php if ( '' !== get_theme_mod('fb_link')) { ?>
+					          <?php if ( '' !== get_theme_mod('fb_link')) { ?>
                     <a title="facebook" class="fa fa-facebook" target="_blank" href="<?php echo esc_url(get_theme_mod('fb_link','#facebook')); ?>"></a>
                     <?php } ?>
 
@@ -50,7 +47,7 @@
                    <h5><?php echo esc_attr(get_theme_mod('contact_title',__('Fitness Center','fitness-lite'))); ?></h5>
                    <p><?php echo esc_attr(get_theme_mod('contact_add',__('100 King St, Melbourne PIC 4000, Australia','fitness-lite'))); ?></p>
 
-           <strong> <?php _e('Email','fitness-lite');?>:</strong> <a href="mailto:<?php echo sanitize_email(get_theme_mod('contact_mail','contact@company.com')); ?>"><?php echo esc_attr(get_theme_mod('contact_mail','contact@company.com')); ?></a></div>
+                   <strong> <?php _e('Email','fitness-lite');?>:</strong> <a href="mailto:<?php echo sanitize_email(get_theme_mod('contact_mail','contact@company.com')); ?>"><?php echo esc_attr(get_theme_mod('contact_mail','contact@company.com')); ?></a></div>
                 </div><!--end .widget-column-4-->
 
             <div class="clear"></div>

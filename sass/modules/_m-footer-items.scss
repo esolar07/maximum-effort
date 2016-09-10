@@ -1,0 +1,8 @@
+
+
+.widget-column-2, .widget-column-3{
+  display: none;
+  @media screen and (min-width: 1170px){
+    display: block;
+  }
+}

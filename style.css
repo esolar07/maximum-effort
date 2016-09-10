@@ -1003,6 +1003,36 @@ ins {
 .wpcf7-submit {
   background: #ff4e1c !important; }
 
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  @media screen and (min-width: 1170px) {
+    .blog-post {
+      flex-direction: row; } }
+  .blog-post .blog_lists {
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    border: 3px solid #ff4e1c; }
+    @media screen and (min-width: 1170px) {
+      .blog-post .blog_lists {
+        width: 30%; } }
+    .blog-post .blog_lists h2 {
+      padding-top: 20px;
+      padding-bottom: 10px; }
+      .blog-post .blog_lists h2 a {
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 0 3px #ff4e1c;
+        /* using border variable so it matchs */ }
+
+.widget-column-2, .widget-column-3 {
+  display: none; }
+  @media screen and (min-width: 1170px) {
+    .widget-column-2, .widget-column-3 {
+      display: block; } }
+
 /* lighten paypal submit button on hover */
 .psc-button:hover {
   background: #ff764f !important; }
@@ -1010,5 +1040,8 @@ ins {
 /* lighten form submit button on hover */
 .wpcf7-submit:hover {
   background: #ff764f !important; }
+
+.blog_lists h2 a:hover {
+  text-shadow: 0 0 3px white; }
 
 /*# sourceMappingURL=style.css.map */
