@@ -123,6 +123,9 @@ function fitnesslite_scripts() {
 	wp_enqueue_script('fitness-lite-custom_js', get_template_directory_uri() . '/js/custom.js' );
 	wp_enqueue_style('font-awesome-style', get_template_directory_uri().'/css/font-awesome.css' );
 	wp_enqueue_style('animation-style', get_template_directory_uri().'/css/animation.css' );
+	// wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js', array(), false, true );
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
