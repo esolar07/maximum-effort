@@ -921,6 +921,14 @@ Module Styles
 .nivo-controlNav {
   display: none; }
 
+.slide_info .ReadMore {
+  padding: 25px 25px;
+  width: 250px;
+  font-size: 1.875em;
+  font-weight: bolder;
+  line-height: 28px;
+  border: 4px solid #ff4e1c; }
+
 .paypal-shopping-carts-checkout .input-text {
   line-height: 3 !important;
   color: #272727; }
@@ -1043,5 +1051,13 @@ ins {
 
 .blog_lists h2 a:hover {
   text-shadow: 0 0 3px white; }
+
+@keyframes slideDown {
+  from {
+    display: none;
+    margin-top: -50px; }
+  to {
+    display: inline-block;
+    margin-top: -10px; } }
 
 /*# sourceMappingURL=style.css.map */

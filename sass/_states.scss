@@ -14,3 +14,31 @@
 .blog_lists h2 a:hover{
   text-shadow: 0 0 3px white;
 }
+
+
+// Homepage hero section info animation
+
+// .slide_info{
+//   h2{
+//      animation: slideDown 2s 1 2s ease-in;
+//   }
+//   p{
+//     animation: slideDown 2s 1 3s ease-in;
+//   }
+//   .ReadMore{
+//     animation: slideDown 2s 1 4s ease-in;
+//   }
+// }
+
+
+
+@keyframes slideDown{
+  from{
+    display: none;
+    margin-top:-50px;
+  }
+  to{
+    display:inline-block;
+    margin-top:-10px;
+  }
+}

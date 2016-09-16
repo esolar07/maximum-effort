@@ -33,7 +33,7 @@
             </a>
             <?php endif; ?>
           </div><!-- logo -->
-          
+
           <div class="toggle">
             <a class="toggleMenu" href="#"><?php _e('Menu','fitness-lite'); ?></a>
           </div><!-- toggle -->
@@ -85,36 +85,15 @@
 
         <div class="nivoSlider" id="slider">
           <img title="#slidecaption1" src="<?php echo get_template_directory_uri();?>/images/slides/slider2.jpg">
-          <!---************************************************************
-            Removing other slide images for now unit better images are made.
-         ******************************************************************-->
-          <!-- <img title="#slidecaption2" src="<?php echo get_template_directory_uri();?>/images/slides/slider2.jpg">
-          <img title="#slidecaption3" src="<?php echo get_template_directory_uri();?>/images/slides/slider3.jpg"> -->
         </div>
 
+          <div class="nivo-html-caption" id="slidecaption1">
+            <div class="slide_info">
+              <h2><a href="#"><?php _e('Welcome to Maximum Effort Gear','fitness-lite');?></a></h2>
+              <p><?php _e('WE PROMISE TO ENABLE YOUR FULL POTENTIAL, TODAY AND TOMORROW','fitness-lite');?></p>
+              <a href="#" class="ReadMore"><?php _e('Checkout our products','fitness-lite');?></a> </div>
+          </div>
 
-        <!--
-          <div class="nivo-html-caption" id="slidecaption1">
-            <div class="slide_info">
-              <h2><a href="#"><?php _e('Welcome to Maximum Effort Gear','fitness-lite');?></a></h2>
-              <p><?php _e('WE PROMISE TO ENABLE YOUR FULL POTENTIAL, TODAY AND TOMORROW','fitness-lite');?></p>
-              <a href="#" class="ReadMore"><?php _e('Read More','fitness-lite');?>&raquo;</a> </div>
-          </div>
-        -->
-          <div class="nivo-html-caption" id="slidecaption1">
-            <div class="slide_info">
-              <h2><a href="#"><?php _e('Welcome to Maximum Effort Gear','fitness-lite');?></a></h2>
-              <p><?php _e('WE PROMISE TO ENABLE YOUR FULL POTENTIAL, TODAY AND TOMORROW','fitness-lite');?></p>
-              <a href="#" class="ReadMore"><?php _e('Read More','fitness-lite');?>&raquo;</a> </div>
-          </div>
-        <!--
-          <div class="nivo-html-caption" id="slidecaption3">
-            <div class="slide_info">
-              <h2><a href="#"><?php _e('Welcome to Fitness Center','fitness-lite');?></a></h2>
-              <p><?php _e('Lorem ipsum rhoncus euismod risus tristique imperdiet Morbi fringilla','fitness-lite');?></p>
-              <a href="#" class="ReadMore"><?php _e('Read More','fitness-lite');?>&raquo;</a> </div>
-          </div>
-        -->
       </div>
     </section>
 
