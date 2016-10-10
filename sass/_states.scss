@@ -11,8 +11,11 @@
 }
 
 
-.blog_lists h2 a:hover{
-  text-shadow: 0 0 3px white;
+
+.slide_info .ReadMore{
+  &:hover:after{
+    animation: btn-up .5s linear forwards;
+   }
 }
 
 
@@ -41,4 +44,10 @@
     display:inline-block;
     margin-top:-10px;
   }
+}
+
+// keyframe for main page btn
+@keyframes btn-up{
+  0% {top:90px;}
+  100% {top: 0px;}
 }
